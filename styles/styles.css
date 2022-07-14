@@ -23,7 +23,8 @@
 }
 
 body {
-  background: url(../media/pexels-back.jpg);
+  background: rgb(9,27,103);
+  background: linear-gradient(0deg, rgba(9,27,103,0.9279061966583508) 0%, rgba(116,20,138,1) 46%, rgba(48,1,31,0.9251050762101716) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -48,6 +49,14 @@ body {
   display: flex;
   height: 45px;
   align-items: center;
+}
+
+.nav a{
+  color: white;
+}
+
+.nav a:hover {
+  color: rgb(148, 44, 204);
 }
 
 .navFavicon {
@@ -231,6 +240,21 @@ body {
 
 ::placeholder {
   color: #110720;
+}
+
+.square {
+  
+  animation: shimmy 3s;
+  animation-direction: alternate;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(-70px, -70px);    
+  }
+  100% {
+    transform: translate(5px, 10px);
+  }
 }
 
 .boton {
