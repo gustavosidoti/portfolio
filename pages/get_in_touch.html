@@ -2,79 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../media/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Gustavo Sidoti - Full Stack Developer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../media/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Gustavo Sidoti - Full Stack Developer</title>
 </head>
 
 <body>
-    <div class="layout-general">
+  <div class="container-fluid">
     <!-- ----------------------------- NAVEGACIÓN ------------------------------ -->
-        <header class="header">
-            <nav class="nav">
-                <a class="navFavicon" href="../index.html"><img src="../media/logo.jpg" width="70" height="50"
-                        alt=""></a>
-                <div class="navEnlaces">
-                    <nav class="nav nav-pills flex-column flex-sm-row nav-me">
-                        <a class="flex-sm-fill text-sm-center nav-link" aria-current="page"
-                            href="./about_me.html">ABOUT ME</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="./skills.html">SKILLS</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="./projects.html">PROJECTS</a>
-                        <a class="flex-sm-fill text-sm-center nav-link" href="./get_in_touch.html">GET IN TOUCH</a>
-                    </nav>
-                </div>
-            </nav>
-        </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../media/logo.jpg" width="70" height="50" alt=""></a>
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fontW"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./about_me.html">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./get_in_touch.html">GET IN TOUCH</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
 
     <!-- ------------------------ INFORMACIÓN PRINCIPAL ------------------------ -->
-        <main>
-            <section class="contacto square">
-                <h2 class="fontW">Get in touch</h2>
-                <form class="form" action="">
+    <main>
+      <section class="col-lg-12 text-center contenido-contacto">
+        <h2 class="fontW">Get in touch</h2>
+      </section>
+      <div class="row formulario">
+        <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label fontW">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label fontW">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fontW">Affair</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <textarea type="textarea" class="form-control" id="exampleInputPassword1" placeholder="Tell me more"
+                rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary boton text-center">Submit</button>
+          </form>
+
+        </div>
+
+      </div>
 
 
-                    <label class="fontW label" for="nombre">Nombre</label>
-                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
-
-
-                    <label class="fontW label" for="apellido">Apellido</label>
-                    <input class="input" type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido"
-                        required>
-
-
-                    <label class="fontW label" for="correo">Correo electrónico</label>
-                    <input class="input" type="email" name="correo" id="correo" placeholder="Ingresá tu email" required>
-
-
-                    <label class="fontW label" for="asunto">Asunto</label>
-                    <input class="input" type="text" name="asunto" id="asunto" placeholder="¿En qué te puedo ayudar?"
-                        required>
-
-
-                    <textarea class="input" name="comentario" id="comentario" cols="30" rows="10"
-                        placeholder="Cuentame un poco más.."></textarea>
-                  
-                    <!-- --------------------------- Botón de acción --------------------------- -->
-                    <input class="boton" type="submit" value="Enviar">
-
-                </form>
-            </section>
-        </main>
+    </main>
 
     <!-- ------------------------------- FOOTER -------------------------------- -->
 
-    <div class="contacto-footer">
-        <footer class="footer">
-            <h5>
-                Copyright © 2022 Gustavo Sidoti - Portfolio
-            </h5>
-        </footer>
+    <div>
+      <footer>
+        <small class="fontW">Copyright &copy; 2022 Gustavo Sidoti - Portfolio</small>
+      </footer>
     </div>
-</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

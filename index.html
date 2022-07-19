@@ -2,54 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./media/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Gustavo Sidoti - Full Stack Developer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./media/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Gustavo Sidoti - Full Stack Developer</title>
 </head>
 
 <body>
-    <div class="layout-general">
-        <!-- ----------------------------- NAVEGACIÓN ------------------------------ -->
-        <header class="header">
-            <nav class="nav">
-                <a class="navFavicon" href="./index.html"><img class="favicon" src="./media/logo.jpg" width="70"
-                        height="50" alt="Icono"></a>
-                <nav class="nav nav-pills flex-column flex-sm-row nav-me">
-                    <a class="flex-sm-fill text-sm-center nav-link" aria-current="page"
-                        href="./pages/about_me.html">ABOUT ME</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/skills.html">SKILLS</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/projects.html">PROJECTS</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/get_in_touch.html">GET IN TOUCH</a>
-                </nav>
-            </nav>
-        </header>
-
-        <!-- ------------------------------- INFORMACIÓN PRINCIPAL-------------------------------- -->
-
-        <main>
-            <div class="inicioDiv">
-                <img class="inicioImg" src="./media/perfil.PNG" alt="Foto de perfil">
-                <h2 class="fontW">Hi, I´m Gustavo Sidoti. Full Stack Developer :)</h2>
-            </div>
-        </main>
-
-        <!-- ------------------------------- FOOTER -------------------------------- -->
-        <div class="index-footer">
-            <footer class="footer">
-                <h5>
-                    Copyright © 2022 Gustavo Sidoti - Portfolio
-                </h5>
-            </footer>
+  <div class="container-fluid">
+    <!-- ----------------------------- NAVEGACIÓN ------------------------------ -->
+    <header>
+      <nav class="navbar navbar-expand-lg navegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../media/logo.jpg" width="70" height="50" alt=""></a>
+          <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fontW"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/about_me.html">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/skills.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/get_in_touch.html">GET IN TOUCH</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <!-- ------------------------------- INFORMACIÓN PRINCIPAL-------------------------------- -->
+
+    <main>
+      <div class="row inicioDiv">
+        <div class="col text-center">
+          <img src="./media/perfil.PNG" alt="Foto de perfil">
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="fontW">Hi, I´m Gustavo Sidoti. Full Stack Developer :)</h2>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- ------------------------------- FOOTER -------------------------------- -->
+    <div>
+      <footer>
+        <small class="fontW">Copyright &copy; 2022 Gustavo Sidoti - Portfolio</small>
+      </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

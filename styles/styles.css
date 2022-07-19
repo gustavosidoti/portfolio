@@ -16,245 +16,108 @@
   color: white;
 }
 
-.layout-general {
-  display: grid;
-  align-items: start;
-  justify-content: start;
-}
-
 body {
-  background: rgb(9,27,103);
-  background: linear-gradient(0deg, rgba(9,27,103,0.9279061966583508) 0%, rgba(116,20,138,1) 46%, rgba(48,1,31,0.9251050762101716) 100%);
+  background: rgb(9, 27, 103);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 27, 103, 0.9279061966583508) 0%,
+    rgba(116, 20, 138, 1) 46%,
+    rgba(48, 1, 31, 0.9251050762101716) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  position: relative;
-  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
+main {
+  min-height: calc(100vh - 3px - 1px);
+}
+
 /* --------------------------------- HEADER --------------------------------- */
-
-.favicon {
-  width: auto;
-  height: 45px;
+.custom-toggler.navbar-toggler {
+  border-color: lightgreen;
 }
 
-.header {
-  display: flex;
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav {
-  display: flex;
-  height: 45px;
-  align-items: center;
-}
-
-.nav a{
+.navegacion a {
   color: white;
 }
 
-.nav a:hover {
-  color: rgb(148, 44, 204);
-}
-
-.navFavicon {
-  float: left;
-  padding-right: 25rem;
-}
-
-.navEnlaces {
-  display: flex;
-}
-
-.nav div a {
-  display: flex;
-  text-decoration: none;
-  margin: 1.5rem;
-  color: white;
-}
 /* ---------------------------------- MAIN ---------------------------------- */
 
 .inicioDiv {
-  position: absolute;
-  left: 30%;
-  top: 20%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .inicioDiv img {
   border-radius: 50rem;
   width: 200px;
   height: 200px;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
+  margin-top: 75px;
 }
 
 /* -------------------------------- SOBRE MI -------------------------------- */
 
-.sobreMi {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  justify-items: center;
-  margin: 70px 0 0 200px;
+.contenido-aboutMe {
+  margin-top: 75px;
 }
 
-.sobreMiDiv {
-  width: 70%;
-  text-align: left;
-  padding: 2rem 15rem 0 0;
-  color: white;
-}
-
-.sobreMiDiv h2 {
-    color: white;
-  }
-
-.sobreMiDiv p {
-  padding-right: -150px;
-  margin: 2rem 0 2rem 0;
-  color: white;
-}
-
-.sobreMieducacionDiv {
-  width: 40%;
-  padding: 2rem 3rem;
-}
-
-.sobreMieducacionH3 {
-  margin: 2rem 0 0.5rem 0;
-  color: white;
-}
-
-.sobreMieducacionDiv h2 {
-    color: white;
-  }
-
-.sobreMieducacionDiv p {
-  padding-right: -150px;
-  margin: 2rem 0 2rem 0;
-  color: white;
+.sobreMi-margenInferior {
+  margin-bottom: 40px;
 }
 
 /* --------------------------------- SKILLS --------------------------------- */
 
-.skills-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 70px;
-}
-
-.skills {
-  margin: 2rem 10rem;
-}
-
-.skills h2 {
+.skills-items p {
   color: white;
-}
-
-.items-skills {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 6fr;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.items-skills p {
-  padding: 50px 0 0 0;
-  color: white;
-}
-
-.tecnologias {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-}
-
-.tecnologias div {
-  margin: 3rem 0;
   padding-top: 10px;
 }
 
-.tecnologias div a {
+.skills-h2 {
+  margin-bottom: 40px;
+}
+
+.contenido-skills {
+  margin-top: 75px;
+}
+
+.tecnologies-items {
+  margin-bottom: 40px;
+}
+
+.tecnologies-items a {
+  margin-right: 20px;
   text-decoration: none;
-  padding: 1.75rem;
 }
 
 /* -------------------------------- PROJECTS -------------------------------- */
 
-.project {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 5rem 1fr;
-  justify-items: center;
-  padding: 1rem 1rem;
-  margin-top: 250px;
+.contenido-project {
+  margin-top: 75px;
 }
 
-.project h2 {
-  grid-column: 1 / 4;
-  margin: -160px 0 0 0;
-}
-
-.project p {
-  margin: -150px 0 0 0;
+.contenido-project h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* -------------------------------- CONTACTO -------------------------------- */
 
-.contacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 3rem 1fr;
-  justify-items: center;
-  padding: 2rem 2rem;
-  margin: 70px 0 0 500px;
+.contenido-contacto {
+  margin-top: 75px;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 500px;
-  padding-top: 30px;
-}
-
-.label {
-  text-align: center;
-}
-
-.input {
-  width: 300px;
-  margin: 0.5rem 0;
-  padding: 0.4rem;
-  border-radius: 0.3rem;
-  background-color: rgb(202, 221, 221);
-}
-
-::placeholder {
-  color: #110720;
-}
-
-.square {
-  
-  animation: shimmy 3s;
-  animation-direction: alternate;
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(-70px, -70px);    
-  }
-  100% {
-    transform: translate(5px, 10px);
-  }
+.formulario {
+  margin-top: 40px;
 }
 
 .boton {
@@ -262,27 +125,26 @@ body {
   padding: 0.4rem 1rem;
   max-width: 0.5rem 0;
   border-radius: 0.3rem;
-  background-color: rgb(202, 221, 221);
-  margin-left: 3.5rem;
+  background-color: rgb(12, 8, 46);
+  margin-left: 8rem;
+  border-color: rgb(167, 15, 169);
 }
 
 .boton:hover {
   opacity: 80%;
   cursor: pointer;
+  background-color: rgb(191, 24, 105);
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
 
-.footer {
-  padding: 1em 0;
+footer p {
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
-.footer h5{
-  color: white;
+footer small {
+  display: flex;
+  justify-content: center;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -293,121 +155,26 @@ body {
 /*                                   TABLET                                   */
 /* -------------------------------------------------------------------------- */
 
-@media screen and (min-width: 751px) and (max-width: 1002px) {
-
-
-  /* --------------------------------- HEADER --------------------------------- */
-
-  .navFavicon {
-    float: left;
-    padding-right: 8rem;
+@media screen and (min-width: 768px) and (max-width: 1002px) {
+  /* ---------------------------------- INDEX --------------------------------- */
+  .inicioDiv img {
+    border-radius: 50rem;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    margin-top: 75px;
   }
 
-  /* -------------------------------- SOBRE MI -------------------------------- */
-
-  .nav {
-    margin: 0 0 -105px;
-  }
-
-  .sobreMi {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-items: center;
-    margin: 90px 0 0 200px;
-  }
-
-  .footer-sobremi h5 {
-    color: white;
-    text-align: center;
-  }
-
-
-  /* --------------------------------- SKILLS --------------------------------- */
-  
-  .skills-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 200px;
-  }
-
-  .skills {
-    margin: -70px 0 40px 0;
-    padding: 0 0 0 10px;
-  }
-
-  .skills h2 {
-    display: flex;
-    color: white;
-    justify-content: center;
-  }
-
-  .items-skills p {
-    padding: 10px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tecnologias {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin: -70px 0 0 0;
-    padding: 0 0 10px 0;
-    
-    
-  }
-
-  .tecnologias div {
-    padding: 35px 0 0 0;
-    margin: 0 0 35px 0;
-  }
-
-  .tecnologias div a {
-    text-decoration: none;
-    padding: 0 15px 0 0;
-  }
-
-  /* -------------------------------- PROJECTS -------------------------------- */
-
-  .project{
-    margin: 230px 0 0 0;
-  }
-
-  /* ------------------------------ GET IN TOUCH ------------------------------ */
-
-  main{
-    margin: 50px 0 0 0;
-  }
-  .contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 3rem 1fr;
-    justify-items: center;
-    padding: 10px 0 0 0;
-    margin: 70px 0 0 160px;
-  }
-
-  .input {
-    width: 400px;
-    margin: 0.2rem 0 0 5px;
-    padding: 0.4rem;
-    border-radius: 0.3rem;
-    background-color: rgb(202, 221, 221);
-  }
-
+  /* -------------------------------- CONTACTO -------------------------------- */
   .boton {
-    width: 300px;
+    width: 170px;
     padding: 0.4rem 1rem;
     max-width: 0.5rem 0;
     border-radius: 0.3rem;
-    background-color: rgb(202, 221, 221);
-    margin-top: 5px;
+    background-color: rgb(12, 8, 46);
+    margin-left: 2rem;
+    border-color: rgb(167, 15, 169);
   }
-  
- 
 }
 
 /* -------------------------------------------------------------------------- */
@@ -418,186 +185,30 @@ body {
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 750.98px) {
-  
-
-  /* --------------------------------- HEADER --------------------------------- */
-
-  .nav {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 0px 50px 0px;
-  }
-
-  .navFavicon {
-    float: left;
-    padding-right: 8rem;
-  }
-
-  .navEnlaces {
-    display: flex;
-    padding: 0px 0px 0px 0px;
-    flex-wrap: wrap;
-  }
-
-
-
-
+@media only screen and (max-width: 767.98px) {
   /* ---------------------------------- INDEX --------------------------------- */
-
-  .inicioDiv {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
   .inicioDiv img {
-    border-radius: 30rem;
+    border-radius: 50rem;
     width: 150px;
     height: 150px;
-    margin: 200px 50px 10px -50px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 75px;
   }
-
-  .inicioDiv h2 {
-    text-align: left;
-    margin: 15px 0 0 -50px;
-  }
-
-
-  /* -------------------------------- SOBRE MI -------------------------------- */
-  
-
-  .sobreMi {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: -20px 0 0 0;
-  }
-  
-  .sobreMiDiv {
-    width: 60%;
-    text-align: left;
-    padding: 2rem 5rem 0 0;
-    color: white;
-    margin: 0 -65px 0 0;
-  }
-  
-  .sobreMiDiv h2 {
-      color: white;
-    }
-  
-  .sobreMiDiv p {
-    padding-right: -150px;
-    margin: 2rem 0 2rem 0;
-    color: white;
-  }
-
-  .sobreMieducacionDiv {
-    width: 60%;
-    padding: 6rem 3rem;
-  }
-
-
-  .footer-sobremi h5 {
-    color: white;
-    text-align: center;
-  }
-
-
 
   /* --------------------------------- SKILLS --------------------------------- */
 
-  .skills-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: -20px 0 40px 0;
+  .divtecnologies {
+    margin-top: 35px;
   }
 
-  .skills {
-    margin: 30px 0 40px 0;
-    padding: 0 0 0 10px;
-  }
-
-  .skills h2 {
-    display: flex;
-    color: white;
-    justify-content: center;
-  }
-
-  .items-skills p {
-    padding: 10px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tecnologias {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin: -10px 0 0 0;
-    padding: 0 0 10px 0;
-  }
-
-  .tecnologias div {
-    padding: 35px 0 0 0;
-    margin: 0 0 35px 0;
-  }
-
-  .tecnologias div a {
-    text-decoration: none;
-    padding: 0 15px 0 0;
-  }
-
-
-  /* -------------------------------- PROJECTS -------------------------------- */
-  .project {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 5rem 1fr;
-    justify-items: center;
-    padding: 1rem 1rem;
-    margin-top: 110px;
-  }
-  
-  .project h2 {
-    grid-column: 1 / 4;
-    margin: -160px 0 0 0;
-  }
-  
-  .project p {
-    margin: -150px 0 0 0;
-  }
-
-
-  /* ------------------------------ GET IN TOUCH ------------------------------ */
-
-  .contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: -10px 0 40px -30px;
-  }
-
-  .input {
-    width: 200px;
-    margin: 0.2rem 0 0 5px;
-    padding: 0.4rem;
-    border-radius: 0.3rem;
-    background-color: rgb(202, 221, 221);
-  }
-
+  /* -------------------------------- CONTACTO -------------------------------- */
   .boton {
-    width: 100px;
+    width: 150px;
     padding: 0.4rem 1rem;
     max-width: 0.5rem 0;
     border-radius: 0.3rem;
-    background-color: rgb(202, 221, 221);
+    background-color: rgb(12, 8, 46);
+    margin-left: 3rem;
+    border-color: rgb(167, 15, 169);
   }
-
-  
 }
