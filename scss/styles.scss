@@ -1,219 +1,313 @@
 /* -------------------------------------------------------------------------- */
 /*                             VARIABLES GLOBALES                             */
 /* -------------------------------------------------------------------------- */
+$fontColor: white;
+$marginTop: 75px;
+$marginBottom: 40px;
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   IMPORTS                                  */
 /* -------------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* ---------------------------------- RESET --------------------------------- */
 * {
   padding: 0%;
   margin: 0%;
   color: black;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 /* ---------------------------- ESTILOS GENERALES --------------------------- */
 .fontW {
-  color: white; }
+  color: $fontColor;
+}
 
 body {
-  background: #091b67;
-  background: linear-gradient(0deg, rgba(9, 27, 103, 0.927906) 0%, #74148a 46%, rgba(48, 1, 31, 0.925105) 100%);
+  background: rgb(9, 27, 103);
+  background: linear-gradient(0deg,
+      rgba(9, 27, 103, 0.9279061966583508) 0%,
+      rgba(116, 20, 138, 1) 46%,
+      rgba(48, 1, 31, 0.9251050762101716) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 main {
-  min-height: calc(100vh - 3px - 1px); }
+  min-height: calc(100vh - 3px - 1px);
+}
 
 /* --------------------------------- HEADER --------------------------------- */
 .custom-toggler.navbar-toggler {
-  border-color: lightgreen; }
+  border-color: lightgreen;
+}
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 .navegacion a {
-  color: white; }
-  .navegacion a:hover {
+  color: $fontColor;
+
+  &:hover {
     opacity: 80%;
     cursor: pointer;
-    color: #bc5587; }
+    color: rgb(188, 85, 135);
+  }
+}
 
 .navbar-nav .nav-link.active {
-  color: #bf1869; }
+  color: rgb(191, 24, 105);
+}
 
 /* ---------------------------------- MAIN ---------------------------------- */
+
 .inicioDiv {
   display: flex;
-  justify-content: center; }
-  .inicioDiv img {
+  justify-content: center;
+
+  & img {
     border-radius: 50rem;
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
-    margin-top: 75px; }
-  .inicioDiv h2 {
+    margin-top: 75px;
+
+  }
+
+  & h2 {
     font-size: calc(1em + 1vw);
     line-height: 1em;
-    margin: 1em; }
+    margin: 1em;
+  }
+}
 
 /* -------------------------------- SOBRE MI -------------------------------- */
+
 .contenido-aboutMe {
-  margin-top: 75px; }
-  .contenido-aboutMe p {
+  margin-top: $marginTop;
+
+  & p {
     color: white;
-    font-size: calc(0.2em + 1vw); }
+    font-size: calc(0.2em + 1vw);
+  }
+}
 
 .subtittle {
   font-size: calc(0.6em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
+
+
 
 .sobreMi-margenInferior {
-  margin-bottom: 40px;
+  margin-bottom: $marginBottom;
   font-size: calc(1em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 /* --------------------------------- SKILLS --------------------------------- */
+
 .contenido-skills {
-  margin-top: 75px; }
+  margin-top: $marginTop;
+
+}
 
 .skills-items p {
   color: white;
   padding-top: 10px;
   font-size: calc(0.4em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 ion-icon {
   color: lawngreen;
   font-size: calc(0.8em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
+
 
 .skills-h2 {
-  margin-bottom: 40px;
+  margin-bottom: $marginBottom;
   font-size: calc(1em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 .bi bi-check2 check {
   color: lawngreen;
   font-size: larger;
-  tab-size: 8; }
+  tab-size: 8;
+}
 
 .tecnologies-items {
-  margin-bottom: 80px; }
-  .tecnologies-items a {
+  margin-bottom: 80px;
+
+  & a {
     margin-right: 20px;
-    text-decoration: none; }
+    text-decoration: none;
+  }
+}
 
 /* -------------------------------- PROJECTS -------------------------------- */
+
 .contenido-project {
-  margin-top: 75px; }
-  .contenido-project h2 {
+  margin-top: $marginTop;
+  & h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: $marginBottom;
     font-size: calc(1em + 1vw);
-    line-height: 1em; }
+    line-height: 1em;
+  }
+}
 
 /* -------------------------------- CONTACTO -------------------------------- */
+
 .contenido-contacto {
-  margin-top: 75px;
+  margin-top: $marginTop;
   font-size: calc(1em + 1vw);
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 .formulario {
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .boton {
   width: 200px;
   padding: 0.4rem 1rem;
   max-width: 0.5rem 0;
   border-radius: 0.3rem;
-  background-color: #0c082e;
+  background-color: rgb(12, 8, 46);
   margin-left: 8rem;
-  border-color: #a70fa9; }
-  .boton:hover {
+  border-color: rgb(167, 15, 169);
+
+  &:hover {
     opacity: 80%;
     cursor: pointer;
-    background-color: #bf1869; }
+    background-color: rgb(191, 24, 105);
+  }
+}
 
 /* --------------------------------- FOOTER --------------------------------- */
+
 footer p {
-  text-align: center; }
+  text-align: center;
+}
 
 footer small {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
+
 /* -------------------------------------------------------------------------- */
 /*                                   TABLET                                   */
 /* -------------------------------------------------------------------------- */
+
 @media screen and (min-width: 768px) and (max-width: 1002px) {
+
   /* ---------------------------------- INDEX --------------------------------- */
   .inicioDiv img {
     border-radius: 50rem;
     width: 180px;
     height: 180px;
     margin-bottom: 20px;
-    margin-top: 75px; }
+    margin-top: 75px;
+  }
+
   /* -------------------------------- ABOUT ME -------------------------------- */
+
   .contenido-aboutMe svg {
     width: 20px;
-    height: 20px; }
+    height: 20px;
+  }
+
   /* --------------------------------- SKILLS --------------------------------- */
+
   .tecnologies-items {
-    margin-bottom: 40px; }
-    .tecnologies-items a {
+    margin-bottom: $marginBottom;
+
+    & a {
       margin-right: 20px;
-      text-decoration: none; }
+      text-decoration: none;
+    }
+  }
+
+
   /* -------------------------------- CONTACTO -------------------------------- */
   .boton {
     width: 170px;
     padding: 0.4rem 1rem;
     max-width: 0.5rem 0;
     border-radius: 0.3rem;
-    background-color: #0c082e;
+    background-color: rgb(12, 8, 46);
     margin-left: 2rem;
-    border-color: #a70fa9; } }
+    border-color: rgb(167, 15, 169);
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                 FIN TABLET                                 */
 /* -------------------------------------------------------------------------- */
+
 /* -------------------------------------------------------------------------- */
 /*                                   MOBILE                                   */
 /* -------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 767.98px) {
+
   /* ---------------------------------- INDEX --------------------------------- */
   .inicioDiv img {
     border-radius: 50rem;
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-    margin-top: 75px; }
-  /* -------------------------------- ABOOUT ME ------------------------------- */
-  .contenido-aboutMe {
-    margin-left: 40px; }
-    .contenido-aboutMe svg {
-      width: 15px;
-      height: 15px; }
-  /* --------------------------------- SKILLS --------------------------------- */
-  .divtecnologies {
-    margin-top: 35px; }
-  .contenido-skills {
     margin-top: 75px;
-    margin-left: 40px; }
+  }
+
+
+  /* -------------------------------- ABOOUT ME ------------------------------- */
+
+  .contenido-aboutMe {
+    margin-left: 40px;
+
+    & svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+
+  /* --------------------------------- SKILLS --------------------------------- */
+
+  .divtecnologies {
+    margin-top: 35px;
+  }
+
+  .contenido-skills {
+    margin-top: $marginTop;
+    margin-left: 40px;
+  }
+
+
   /* -------------------------------- CONTACTO -------------------------------- */
   .boton {
     width: 150px;
     padding: 0.4rem 1rem;
     max-width: 0.5rem 0;
     border-radius: 0.3rem;
-    background-color: #0c082e;
+    background-color: rgb(12, 8, 46);
     margin-left: 3rem;
-    border-color: #a70fa9; } }
+    border-color: rgb(167, 15, 169);
+  }
+}
