@@ -1,0 +1,33 @@
+@import 'variables';
+
+/* -------------------------------- PROJECTS -------------------------------- */
+
+.contenido-project {
+    margin-top: $marginTop;
+    h2 {
+      text-align: center;
+      margin-bottom: $marginBottom;
+      font-size: calc(1em + 1vw);
+      line-height: 1em;
+    }
+  }
+
+.projects-image-ies{
+    
+      width: 150px;
+      height: 150px;
+      margin-top: 35px;
+}
+
+.projects-image-sumen{
+      width: 250px;
+      height: 150px;
+      margin-top: 35px;
+}
+
+.projects-image-autoshop{
+    
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
+}

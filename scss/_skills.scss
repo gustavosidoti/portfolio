@@ -1,0 +1,43 @@
+@import 'variables';
+
+/* --------------------------------- SKILLS --------------------------------- */
+
+.contenido-skills {
+    margin-top: $marginTop;
+  
+  }
+  
+  .skills-items p {
+    color: white;
+    padding-top: 10px;
+    font-size: calc(0.4em + 1vw);
+    line-height: 1em;
+  }
+  
+  ion-icon {
+    color: lawngreen;
+    font-size: calc(0.8em + 1vw);
+    line-height: 1em;
+  }
+  
+  
+  .skills-h2 {
+    margin-bottom: $marginBottom;
+    font-size: calc(1em + 1vw);
+    line-height: 1em;
+  }
+  
+  .bi bi-check2 check {
+    color: lawngreen;
+    font-size: larger;
+    tab-size: 8;
+  }
+  
+  .tecnologies-items {
+    margin-bottom: 80px;
+  
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+  }

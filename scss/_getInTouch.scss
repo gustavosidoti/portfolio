@@ -1,0 +1,45 @@
+@import 'variables';
+
+/* -------------------------------- GET IN TOUCH -------------------------------- */
+
+.contenido-contacto {
+    margin-top: $marginTop;
+    font-size: calc(1em + 1vw);
+    line-height: 1em;
+  }
+  
+  .formulario {
+    margin-top: 40px;
+  }
+  
+  .boton {
+    width: 200px;
+    padding: 0.4rem 1rem;
+    max-width: 0.5rem 0;
+    border-radius: 0.3rem;
+    background-color: rgb(12, 8, 46);
+    margin-left: 8rem;
+    border-color: rgb(167, 15, 169);
+  
+    &:hover {
+      opacity: 80%;
+      cursor: pointer;
+      background-color: rgb(191, 24, 105);
+    }
+  }
+  
+  .square {
+    
+    animation: shimmy 3s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes shimmy {
+    0% {
+      transform: translate(-50px, -50px);    
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
