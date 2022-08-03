@@ -1,14 +1,23 @@
 
 /* ---------------------------------- INDEX ---------------------------------- */
 
+/* --- MAP-GET --- */
+$mapaImagen: (
+  radioImagen: 50rem,
+  ancho: 250px,
+  alto: 250px
+);
+  
+
+
 .inicioDiv {
     display: flex;
     justify-content: center;
   
     img {
-      border-radius: 50rem;
-      width: 250px;
-      height: 250px;
+      border-radius: map-get($mapaImagen, radioImagen );
+      width: map-get($mapaImagen, ancho );
+      height: map-get($mapaImagen, alto );
       margin-bottom: 20px;
       margin-top: 75px;
         h2 {
@@ -17,4 +26,8 @@
             margin: 1em;
         }
     }
+  }
+
+  .typed-cursor {
+    color: white;
   }

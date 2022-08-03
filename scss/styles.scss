@@ -1,17 +1,18 @@
 /* -------------------------------------------------------------------------- */
 /*                             ANIDAMIENTO                             */
 /* -------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import 'body';
-@import 'mediasQueries';
-@import 'header';
-@import 'index';
-@import 'aboutMe';
-@import 'skills';
-@import 'projects';
-@import 'getInTouch';
-@import 'footer';
 
+@import 'layout/body';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'views/index';
+@import 'views/aboutMe';
+@import 'views/skills';
+@import 'views/projects';
+@import 'views/getInTouch';
+
+@import 'utilities/mediasQueries';
 
 
 

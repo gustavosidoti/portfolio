@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../utilities/variables';
 
 /* --------------------------------- SKILLS --------------------------------- */
 
@@ -8,6 +8,7 @@
   }
   
   .skills-items p {
+    font-family: $fontFamily;
     color: white;
     padding-top: 10px;
     font-size: calc(0.4em + 1vw);

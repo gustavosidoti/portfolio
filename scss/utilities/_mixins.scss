@@ -1,0 +1,16 @@
+@import '../utilities/variables';
+
+@mixin botonStyle ($ancho, $margenIzq){
+    width: $ancho;
+    padding: 0.4rem 1rem;
+    max-width: 0.5rem 0;
+    border-radius: 0.3rem;
+    background-color: rgb(12, 8, 46);
+    margin-left: $margenIzq;
+    border-color: rgb(167, 15, 169);
+    &:hover {
+        opacity: 80%;
+        cursor: pointer;
+        background-color: rgb(191, 24, 105);
+      }
+}

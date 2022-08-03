@@ -1,4 +1,5 @@
-@import 'variables';
+@import '../utilities/variables';
+
 
 /* -------------------------------- ABOUT ME -------------------------------- */
 
@@ -6,6 +7,7 @@
     margin-top: $marginTop;
   
     p {
+      font-family: $fontFamily;
       color: white;
       font-size: calc(0.2em + 1vw);
     }

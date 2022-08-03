@@ -1,9 +1,18 @@
 /* -------------------------------------------------------------------------- */
 /*                             ANIDAMIENTO                             */
 /* -------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* -------------------------------- VARIABLES ------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* ---------------------------------- RESET --------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -28,6 +37,162 @@ body {
 main {
   min-height: calc(100vh - 3px - 1px); }
 
+/* -------------------------------- VARIABLES ------------------------------- */
+/* --------------------------------- HEADER --------------------------------- */
+.custom-toggler.navbar-toggler {
+  border-color: lightgreen; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.navegacion a {
+  color: white; }
+  .navegacion a:hover {
+    opacity: 80%;
+    cursor: pointer;
+    color: #bc5587; }
+
+.navbar-nav .nav-link.active {
+  color: #bf1869; }
+
+/* --------------------------------- FOOTER --------------------------------- */
+footer p {
+  text-align: center; }
+
+footer small {
+  display: flex;
+  justify-content: center; }
+
+/* ---------------------------------- INDEX ---------------------------------- */
+/* --- MAP-GET --- */
+.inicioDiv {
+  display: flex;
+  justify-content: center; }
+  .inicioDiv img {
+    border-radius: 50rem;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 75px; }
+    .inicioDiv img h2 {
+      font-size: calc(1em + 1vw);
+      line-height: 1em;
+      margin: 1em; }
+
+.typed-cursor {
+  color: white; }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------- ABOUT ME -------------------------------- */
+.contenido-aboutMe {
+  margin-top: 75px; }
+  .contenido-aboutMe p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: calc(0.2em + 1vw); }
+
+.subtittle {
+  font-size: calc(0.6em + 1vw);
+  line-height: 1em; }
+
+.sobreMi-margenInferior {
+  margin-bottom: 40px;
+  font-size: calc(1em + 1vw);
+  line-height: 1em; }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+/* --------------------------------- SKILLS --------------------------------- */
+.contenido-skills {
+  margin-top: 75px; }
+
+.skills-items p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-top: 10px;
+  font-size: calc(0.4em + 1vw);
+  line-height: 1em; }
+
+ion-icon {
+  color: lawngreen;
+  font-size: calc(0.8em + 1vw);
+  line-height: 1em; }
+
+.skills-h2 {
+  margin-bottom: 40px;
+  font-size: calc(1em + 1vw);
+  line-height: 1em; }
+
+.bi bi-check2 check {
+  color: lawngreen;
+  font-size: larger;
+  tab-size: 8; }
+
+.tecnologies-items {
+  margin-bottom: 80px; }
+  .tecnologies-items a {
+    margin-right: 20px;
+    text-decoration: none; }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------- PROJECTS -------------------------------- */
+.contenido-project {
+  margin-top: 75px; }
+  .contenido-project h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: calc(1em + 1vw);
+    line-height: 1em; }
+
+/* --- USO DE EXTENDS --- */
+.propiepadesImagenes, .projects-image-ies, .projects-image-sumen, .projects-image-autoshop {
+  height: 150px;
+  margin-top: 35px; }
+
+.projects-image-ies {
+  width: 150px; }
+
+.projects-image-sumen {
+  width: 250px; }
+
+.projects-image-autoshop {
+  width: 150px; }
+
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------- GET IN TOUCH -------------------------------- */
+.contenido-contacto {
+  margin-top: 75px;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1em + 1vw);
+  line-height: 1em; }
+
+.formulario {
+  margin-top: 40px; }
+
+.boton {
+  width: 200px;
+  padding: 0.4rem 1rem;
+  max-width: 0.5rem 0;
+  border-radius: 0.3rem;
+  background-color: #0c082e;
+  margin-left: 8rem;
+  border-color: #a70fa9; }
+  .boton:hover {
+    opacity: 80%;
+    cursor: pointer;
+    background-color: #bf1869; }
+
+.square {
+  animation: shimmy 3s;
+  animation-direction: alternate; }
+
+@keyframes shimmy {
+  0% {
+    transform: translate(-50px, -50px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+/* -------------------------------- VARIABLES ------------------------------- */
 /* -------------------------------- VARIABLES ------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
@@ -61,7 +226,11 @@ main {
     border-radius: 0.3rem;
     background-color: #0c082e;
     margin-left: 2rem;
-    border-color: #a70fa9; } }
+    border-color: #a70fa9; }
+    .boton:hover {
+      opacity: 80%;
+      cursor: pointer;
+      background-color: #bf1869; } }
 
 /* -------------------------------------------------------------------------- */
 /*                                 FIN TABLET                                 */
@@ -110,152 +279,8 @@ main {
     border-radius: 0.3rem;
     background-color: #0c082e;
     margin-left: 3rem;
-    border-color: #a70fa9; } }
-
-/* -------------------------------- VARIABLES ------------------------------- */
-/* --------------------------------- HEADER --------------------------------- */
-.custom-toggler.navbar-toggler {
-  border-color: lightgreen; }
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-.navegacion a {
-  color: white; }
-  .navegacion a:hover {
-    opacity: 80%;
-    cursor: pointer;
-    color: #bc5587; }
-
-.navbar-nav .nav-link.active {
-  color: #bf1869; }
-
-/* ---------------------------------- INDEX ---------------------------------- */
-.inicioDiv {
-  display: flex;
-  justify-content: center; }
-  .inicioDiv img {
-    border-radius: 50rem;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
-    margin-top: 75px; }
-    .inicioDiv img h2 {
-      font-size: calc(1em + 1vw);
-      line-height: 1em;
-      margin: 1em; }
-
-/* -------------------------------- VARIABLES ------------------------------- */
-/* -------------------------------- ABOUT ME -------------------------------- */
-.contenido-aboutMe {
-  margin-top: 75px; }
-  .contenido-aboutMe p {
-    color: white;
-    font-size: calc(0.2em + 1vw); }
-
-.subtittle {
-  font-size: calc(0.6em + 1vw);
-  line-height: 1em; }
-
-.sobreMi-margenInferior {
-  margin-bottom: 40px;
-  font-size: calc(1em + 1vw);
-  line-height: 1em; }
-
-/* -------------------------------- VARIABLES ------------------------------- */
-/* --------------------------------- SKILLS --------------------------------- */
-.contenido-skills {
-  margin-top: 75px; }
-
-.skills-items p {
-  color: white;
-  padding-top: 10px;
-  font-size: calc(0.4em + 1vw);
-  line-height: 1em; }
-
-ion-icon {
-  color: lawngreen;
-  font-size: calc(0.8em + 1vw);
-  line-height: 1em; }
-
-.skills-h2 {
-  margin-bottom: 40px;
-  font-size: calc(1em + 1vw);
-  line-height: 1em; }
-
-.bi bi-check2 check {
-  color: lawngreen;
-  font-size: larger;
-  tab-size: 8; }
-
-.tecnologies-items {
-  margin-bottom: 80px; }
-  .tecnologies-items a {
-    margin-right: 20px;
-    text-decoration: none; }
-
-/* -------------------------------- VARIABLES ------------------------------- */
-/* -------------------------------- PROJECTS -------------------------------- */
-.contenido-project {
-  margin-top: 75px; }
-  .contenido-project h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: calc(1em + 1vw);
-    line-height: 1em; }
-
-.projects-image-ies {
-  width: 150px;
-  height: 150px;
-  margin-top: 35px; }
-
-.projects-image-sumen {
-  width: 250px;
-  height: 150px;
-  margin-top: 35px; }
-
-.projects-image-autoshop {
-  width: 150px;
-  height: 150px;
-  margin-top: 35px; }
-
-/* -------------------------------- VARIABLES ------------------------------- */
-/* -------------------------------- GET IN TOUCH -------------------------------- */
-.contenido-contacto {
-  margin-top: 75px;
-  font-size: calc(1em + 1vw);
-  line-height: 1em; }
-
-.formulario {
-  margin-top: 40px; }
-
-.boton {
-  width: 200px;
-  padding: 0.4rem 1rem;
-  max-width: 0.5rem 0;
-  border-radius: 0.3rem;
-  background-color: #0c082e;
-  margin-left: 8rem;
-  border-color: #a70fa9; }
-  .boton:hover {
-    opacity: 80%;
-    cursor: pointer;
-    background-color: #bf1869; }
-
-.square {
-  animation: shimmy 3s;
-  animation-direction: alternate; }
-
-@keyframes shimmy {
-  0% {
-    transform: translate(-50px, -50px); }
-  100% {
-    transform: translate(0px, 0px); } }
-
-/* --------------------------------- FOOTER --------------------------------- */
-footer p {
-  text-align: center; }
-
-footer small {
-  display: flex;
-  justify-content: center; }
+    border-color: #a70fa9; }
+    .boton:hover {
+      opacity: 80%;
+      cursor: pointer;
+      background-color: #bf1869; } }
