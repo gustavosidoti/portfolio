@@ -61,7 +61,8 @@ footer p {
 
 footer small {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: calc(0.7em + 0.5vw); }
 
 /* ---------------------------------- INDEX ---------------------------------- */
 /* --- MAP-GET --- */
@@ -74,13 +75,23 @@ footer small {
     height: 250px;
     margin-bottom: 20px;
     margin-top: 75px; }
-    .inicioDiv img h2 {
+    .inicioDiv img h1 {
       font-size: calc(1em + 1vw);
       line-height: 1em;
       margin: 1em; }
 
 .typed-cursor {
   color: white; }
+
+.arrowDown {
+  margin-top: 85px;
+  color: white;
+  font-size: calc(5em + 2vw);
+  animation: pulse;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s;
+  /* don't forget to set a duration! */
+  animation-iteration-count: infinite; }
 
 /* -------------------------------- VARIABLES ------------------------------- */
 /* -------------------------------- ABOUT ME -------------------------------- */
@@ -89,16 +100,26 @@ footer small {
   .contenido-aboutMe p {
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: calc(0.2em + 1vw); }
+    font-size: calc(0.8em + 0.5vw); }
 
 .subtittle {
-  font-size: calc(0.6em + 1vw);
+  font-size: calc(1em + 0.5vw);
   line-height: 1em; }
 
 .sobreMi-margenInferior {
   margin-bottom: 40px;
   font-size: calc(1em + 1vw);
   line-height: 1em; }
+
+.arrowLeft {
+  margin-top: 85px;
+  color: white;
+  font-size: calc(1em + 2vw);
+  animation: pulse;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s;
+  /* don't forget to set a duration! */
+  animation-iteration-count: infinite; }
 
 /* -------------------------------- VARIABLES ------------------------------- */
 /* --------------------------------- SKILLS --------------------------------- */
@@ -109,15 +130,14 @@ footer small {
   font-family: "Roboto", sans-serif;
   color: white;
   padding-top: 10px;
-  font-size: calc(0.4em + 1vw);
-  line-height: 1em; }
+  font-size: calc(0.4em + 1vw); }
 
 ion-icon {
   color: lawngreen;
   font-size: calc(0.8em + 1vw);
   line-height: 1em; }
 
-.skills-h2 {
+.skills-h1 {
   margin-bottom: 40px;
   font-size: calc(1em + 1vw);
   line-height: 1em; }
@@ -133,11 +153,14 @@ ion-icon {
     margin-right: 20px;
     text-decoration: none; }
 
+.separation {
+  margin-bottom: 10px; }
+
 /* -------------------------------- VARIABLES ------------------------------- */
 /* -------------------------------- PROJECTS -------------------------------- */
 .contenido-project {
   margin-top: 75px; }
-  .contenido-project h2 {
+  .contenido-project h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: calc(1em + 1vw);
@@ -162,9 +185,10 @@ ion-icon {
 /* -------------------------------- GET IN TOUCH -------------------------------- */
 .contenido-contacto {
   margin-top: 75px;
-  font-family: "Roboto", sans-serif;
-  font-size: calc(1em + 1vw);
-  line-height: 1em; }
+  font-family: "Roboto", sans-serif; }
+  .contenido-contacto h1 {
+    font-size: calc(1em + 1vw);
+    line-height: 1em; }
 
 .formulario {
   margin-top: 40px; }
@@ -214,7 +238,7 @@ ion-icon {
     height: 20px; }
   /* --------------------------------- SKILLS --------------------------------- */
   .tecnologies-items {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
     .tecnologies-items a {
       margin-right: 20px;
       text-decoration: none; }
@@ -252,12 +276,16 @@ ion-icon {
     .contenido-aboutMe svg {
       width: 15px;
       height: 15px; }
+  .h1Education {
+    margin-top: 35px; }
   /* --------------------------------- SKILLS --------------------------------- */
-  .divtecnologies {
+  .h1TecnologiesMovil {
     margin-top: 35px; }
   .contenido-skills {
     margin-top: 75px;
     margin-left: 40px; }
+  .tecnologies-items {
+    margin-bottom: 30px; }
   /* --------------------------------- PROJECT -------------------------------- */
   .projects-image-ies {
     width: 75px;

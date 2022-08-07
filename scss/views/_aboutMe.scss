@@ -9,12 +9,12 @@
     p {
       font-family: $fontFamily;
       color: white;
-      font-size: calc(0.2em + 1vw);
+      font-size: calc(0.8em + 0.5vw);
     }
   }
   
   .subtittle {
-    font-size: calc(0.6em + 1vw);
+    font-size: calc(1em + 0.5vw);
     line-height: 1em;
   }
   
@@ -25,3 +25,12 @@
     font-size: calc(1em + 1vw);
     line-height: 1em;
   }
+
+  .arrowLeft {
+    margin-top: 85px;
+    color: white;
+    font-size: calc(1em + 2vw);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+   }

@@ -20,7 +20,7 @@ $mapaImagen: (
       height: map-get($mapaImagen, alto );
       margin-bottom: 20px;
       margin-top: 75px;
-        h2 {
+        h1 {
             font-size: calc(1em + 1vw);
             line-height: 1em;
             margin: 1em;
@@ -31,3 +31,12 @@ $mapaImagen: (
   .typed-cursor {
     color: white;
   }
+
+ .arrowDown {
+  margin-top: 85px;
+  color: white;
+  font-size: calc(5em + 2vw);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+  animation-iteration-count: infinite;
+ }

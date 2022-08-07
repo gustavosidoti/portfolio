@@ -30,7 +30,7 @@
     /* --------------------------------- SKILLS --------------------------------- */
   
     .tecnologies-items {
-      margin-bottom: $marginBottom;
+      margin-bottom: 30px;
   
       a {
         margin-right: 20px;
@@ -75,17 +75,25 @@
         height: 15px;
       }
     }
+
+    .h1Education {
+      margin-top: 35px;
+    }
   
   
     /* --------------------------------- SKILLS --------------------------------- */
   
-    .divtecnologies {
+    .h1TecnologiesMovil {
       margin-top: 35px;
     }
   
     .contenido-skills {
       margin-top: $marginTop;
       margin-left: 40px;
+    }
+
+    .tecnologies-items {
+      margin-bottom: 30px;
     }
   /* --------------------------------- PROJECT -------------------------------- */
 

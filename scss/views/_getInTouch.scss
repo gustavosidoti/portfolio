@@ -4,32 +4,36 @@
 /* -------------------------------- GET IN TOUCH -------------------------------- */
 
 .contenido-contacto {
-    margin-top: $marginTop;
-    font-family: $fontFamily;
+  margin-top: $marginTop;
+  font-family: $fontFamily;
+
+  h1 {
     font-size: calc(1em + 1vw);
     line-height: 1em;
   }
-  
-  .formulario {
-    margin-top: 40px;
+
+}
+
+.formulario {
+  margin-top: 40px;
+}
+
+.boton {
+  @include botonStyle(200px, 8rem);
+}
+
+.square {
+
+  animation: shimmy 3s;
+  animation-direction: alternate;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(-50px, -50px);
   }
-  
-  .boton {
-    @include botonStyle(200px, 8rem);
+
+  100% {
+    transform: translate(0px, 0px);
   }
-  
-  .square {
-    
-    animation: shimmy 3s;
-    animation-direction: alternate;
-  }
-  
-  @keyframes shimmy {
-    0% {
-      transform: translate(-50px, -50px);    
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
-  
+}
