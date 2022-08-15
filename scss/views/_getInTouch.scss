@@ -19,7 +19,7 @@
 }
 
 .boton {
-  @include botonStyle(200px, 8rem);
+  @include botonStyle(35%, 0%);
 }
 
 .square {
@@ -37,3 +37,44 @@
     transform: translate(0px, 0px);
   }
 }
+
+
+.colDatos{
+  display: flex;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  svg{
+    stroke: white;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.infoContacto{
+  display: flex;
+  flex-direction: column;
+}
+
+.blokeP{
+  margin-bottom: 20px;
+  p{
+    color: white;
+  }
+}
+
+.tBold{
+  font-weight: bold;
+}
+
+.form-control{
+  width: 70%;
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+/* --------------------------------- IMPORTS -------------------------------- */
+@import '../utilities/mixins';
+
+/* ------------------------------ CONTENIDO 404 ----------------------------- */
+
+.definicion{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    max-width: 90%;
+}
+
+.image {
+    width:350px;
+    height:350px;
+    margin-top: 5%;
+    margin-bottom: 35px;
+}
+
+.boton404 {
+    @include botonStyle(15%, 43%);
+    
+        text-decoration: none;
+        color: white;
+    }
+  
+  

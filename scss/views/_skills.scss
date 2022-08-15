@@ -1,4 +1,5 @@
 @import '../utilities/variables';
+@import '../utilities/extends';
 
 /* --------------------------------- SKILLS --------------------------------- */
 
@@ -45,4 +46,13 @@
 
   .separation{
     margin-bottom: 10px;
+  }
+
+  .skillsT{
+    color: white;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+    margin-top: 35px;
+    font-size: calc(0.8em + 0.5vw);
   }

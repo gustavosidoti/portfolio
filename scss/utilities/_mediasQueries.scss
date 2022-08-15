@@ -1,6 +1,7 @@
 @import '../utilities/variables';
 @import '../utilities/mixins';
 
+
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
@@ -26,6 +27,23 @@
       width: 20px;
       height: 20px;
     }
+
+    .h1Education {
+      margin-top: 0px;
+    }
+
+    .contenido-aboutMe {
+      p {
+        text-align: left;
+      }
+    }
+
+    .aboutMeT{
+      margin-top: 70px;
+      margin-bottom: 20px;
+      width: 100px;
+      margin-left: 40px;
+    }
   
     /* --------------------------------- SKILLS --------------------------------- */
   
@@ -37,12 +55,78 @@
         text-decoration: none;
       }
     }
+
+    .skillsT{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 200px;
+      margin-left: 40px;
+    }
+
+    /* -------------------------------- PROJECTS -------------------------------- */
+    .marginT{
+      margin-top: 85px;
+      font-size: calc(0.5em + 1.5vw);
+    }
   
+    .projectsT{ 
+      margin-top: 70px;
+      margin-bottom: 20px;
+      width: 200px;
+      margin-left: 40px;
+    }
   
     /* -------------------------------- CONTACTO -------------------------------- */
     .boton {
-      @include botonStyle(170px, 2rem);
+      @include botonStyle(300px, 0%);
     }
+
+    .form-control{
+      width: 400px;
+     
+    }
+
+    .square {
+
+      animation: shimmy 3s;
+      animation-direction: alternate;
+      margin-right: 200px;
+    }
+    @keyframes shimmy {
+      0% {
+        transform: translate(-30px, -30px);
+      }
+    
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+
+    .formulario{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formu{
+      margin-left: 200px;
+      margin-bottom: 50px;
+    }
+
+    /* -------------------------------- ERROR 404 ------------------------------- */
+ 
+  .image {
+    width:300px;
+    height:300px;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    padding: 10px;
+    
+}
+ 
+  .boton404 {
+    @include botonStyle(10%, 40%);
+    width: 150px;
+   }
   }
   
   /* -------------------------------------------------------------------------- */
@@ -80,6 +164,12 @@
       margin-top: 35px;
     }
   
+    .aboutMeT{
+      margin-top: 70px;
+      margin-bottom: 20px;
+      width: 100px;
+      margin-left: 10px;
+    }
   
     /* --------------------------------- SKILLS --------------------------------- */
   
@@ -95,30 +185,83 @@
     .tecnologies-items {
       margin-bottom: 30px;
     }
+
+    .skillsT{ 
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 200px;
+      margin-left: 10px;
+    }
+    
   /* --------------------------------- PROJECT -------------------------------- */
 
   .projects-image-ies{
     
-    width: 75px;
-    height: 75px;
-    margin-top: 35px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
 }
 
 .projects-image-sumen{
-    width: 100px;
-    height: 75px;
-    margin-top: 35px;
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
 }
 
 .projects-image-autoshop{
   
-  width: 75px;
-  height: 75px;
-  margin-top: 35px;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
 }
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.projectsT{ 
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 150px;
+  margin-left: 40px;
+}
+
   
-    /* -------------------------------- CONTACTO -------------------------------- */
+  /* -------------------------------- CONTACTO -------------------------------- */
     .boton {
-      @include botonStyle(150px, 3rem);
+      @include botonStyle(50%, 0%);
     }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .form-control{
+    width: 70%;
+  }
+
+  .formu{
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+
+  /* -------------------------------- ERROR 404 ------------------------------- */
+ 
+  .image {
+    width:200px;
+    height:200px;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    align-items: center;
+    padding: 10px;
 }
+ 
+  .boton404 {
+    @include botonStyle(25%, 40%);
+    width: 100px;
+   }
+  }
