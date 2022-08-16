@@ -6,16 +6,18 @@
 .definicion{
     display: flex;
     justify-content: center;
+    display:inline-block
 }
 
 body{
     max-width: 90%;
+    
 }
 
 .image {
     width:350px;
     height:350px;
-    margin-top: 5%;
+    margin-top: 20%;
     margin-bottom: 35px;
 }
 

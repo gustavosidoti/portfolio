@@ -319,7 +319,8 @@ ion-icon {
 /* ------------------------------ CONTENIDO 404 ----------------------------- */
 .definicion {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  display: inline-block; }
 
 body {
   max-width: 90%; }
@@ -327,7 +328,7 @@ body {
 .image {
   width: 350px;
   height: 350px;
-  margin-top: 5%;
+  margin-top: 20%;
   margin-bottom: 35px; }
 
 .boton404 {
