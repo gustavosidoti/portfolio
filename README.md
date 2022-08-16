@@ -18,12 +18,6 @@ My personal portfolio. Final web development project at CODERHOUSE.
 
 <h3>Views</h3>
 
-# About this project
-
-My personal portfolio. Final web development project at CODERHOUSE.
-
-# Views:
-
 <h4>Index:</h4> 
 It is the index of the site, the first look where you will find my photo, a presentation message, and a button to browse the profile.
 
